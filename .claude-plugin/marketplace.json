@@ -1,0 +1,24 @@
+{
+  "name": "claude-code-toolkit",
+  "owner": {
+    "name": "Luciano Pontes",
+    "url": "https://github.com/lupontes"
+  },
+  "plugins": [
+    {
+      "name": "claude-mem",
+      "source": "./plugins/claude-mem",
+      "description": "Memory compression system for Claude Code - persist context across sessions. Vendored from thedotmack/claude-mem (Apache-2.0)."
+    },
+    {
+      "name": "handoff",
+      "source": "./plugins/handoff",
+      "description": "Hand off context to any AI coding agent - captures task, progress, and modified files into a resumable handoff document. Vendored from willseltzer/claude-handoff (MIT)."
+    },
+    {
+      "name": "headroom",
+      "source": "./plugins/headroom",
+      "description": "Headroom startup hooks for Claude Code and GitHub Copilot CLI. Vendored from chopratejas/headroom (Apache-2.0)."
+    }
+  ]
+}

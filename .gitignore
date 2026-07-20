@@ -1,0 +1,31 @@
+# Secrets & local config
+.env
+.env.*
+!.env.example
+*.local.json
+.claude/settings.local.json
+**/mcp-configs/**/*.json
+!**/mcp-configs/**/*.example.json
+
+# Credentials / keys
+*.pem
+*.key
+id_rsa*
+*.token
+
+# Dependencies & build artifacts
+node_modules/
+target/
+dist/
+build/
+
+# Runtime / logs
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
