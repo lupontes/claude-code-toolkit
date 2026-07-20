@@ -2,4 +2,4 @@
 
 Prompts avulsos ficam aqui, um arquivo `.md` por prompt.
 
-Ainda não há prompts próprios neste toolkit — placeholder para conteúdo futuro.
+- [`observability-logging-audit`](observability-logging-audit.md) — auditoria de observabilidade e logging (logs estruturados, data masking, níveis).

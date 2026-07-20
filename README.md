@@ -43,7 +43,9 @@ Nenhum slash command próprio ainda — ver [`commands/`](commands).
 
 ### Prompts
 
-Nenhum prompt avulso ainda — ver [`prompts/`](prompts).
+| Prompt | Descrição |
+|---|---|
+| [`observability-logging-audit`](prompts/observability-logging-audit.md) | Revisa a arquitetura de observabilidade: logs estruturados (JSON), falhas silenciosas, contexto (userId/action/requestId), logger profissional (Winston/Pino), data masking e níveis de log. |
 
 ## Uso manual (sem marketplace)
 
