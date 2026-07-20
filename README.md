@@ -21,15 +21,19 @@ Exemplo:
 
 ### Plugins
 
-Os plugins abaixo são **cópias vendoradas** de projetos de terceiros,
+Os três primeiros plugins são **cópias vendoradas** de projetos de terceiros,
 redistribuídos aqui sob suas licenças originais (cada pasta mantém seu
-`LICENSE`/`NOTICE` e um `VENDORED.md` com o link para o upstream canônico).
+`LICENSE`/`NOTICE` e um `VENDORED.md` com o link para o upstream canônico). O
+`hyperframes` é **referenciado por fonte GitHub** (não vendorado) — por ser um
+monorepo grande que já é o próprio marketplace, ele é instalado direto do
+upstream, sempre na versão mais recente.
 
-| Plugin | Descrição | Upstream | Licença |
-|---|---|---|---|
-| `claude-mem` | Sistema de compressão de memória — persiste contexto entre sessões do Claude Code. | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Apache-2.0 |
-| `handoff` | Cria documentos de handoff (tarefa, progresso e arquivos modificados) para retomar o trabalho em qualquer agente de IA. | [willseltzer/claude-handoff](https://github.com/willseltzer/claude-handoff) | MIT |
-| `headroom` | Startup hooks para Claude Code e GitHub Copilot CLI. | [chopratejas/headroom](https://github.com/chopratejas/headroom) | Apache-2.0 |
+| Plugin | Descrição | Upstream | Fonte | Licença |
+|---|---|---|---|---|
+| `claude-mem` | Sistema de compressão de memória — persiste contexto entre sessões do Claude Code. | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | vendorado | Apache-2.0 |
+| `handoff` | Cria documentos de handoff (tarefa, progresso e arquivos modificados) para retomar o trabalho em qualquer agente de IA. | [willseltzer/claude-handoff](https://github.com/willseltzer/claude-handoff) | vendorado | MIT |
+| `headroom` | Startup hooks para Claude Code e GitHub Copilot CLI. | [chopratejas/headroom](https://github.com/chopratejas/headroom) | vendorado | Apache-2.0 |
+| `hyperframes` | HyperFrames da HeyGen: escreva HTML, renderize vídeo — composições, animações GSAP, legendas, narrações e captura de sites. | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | referência GitHub | Apache-2.0 |
 
 ### Skills
 

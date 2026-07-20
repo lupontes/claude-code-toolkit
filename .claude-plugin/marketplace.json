@@ -19,6 +19,14 @@
       "name": "headroom",
       "source": "./plugins/headroom",
       "description": "Headroom startup hooks for Claude Code and GitHub Copilot CLI. Vendored from chopratejas/headroom (Apache-2.0)."
+    },
+    {
+      "name": "hyperframes",
+      "source": {
+        "source": "github",
+        "repo": "heygen-com/hyperframes"
+      },
+      "description": "HyperFrames by HeyGen. Write HTML, render video: compositions, GSAP/runtime animations, captions, voiceovers, audio-reactive visuals, and website capture. Referenced from heygen-com/hyperframes (Apache-2.0)."
     }
   ]
 }
