@@ -12,7 +12,7 @@ observabilidade da aplicação. Identifique:
 2. Pontos onde a aplicação falha silenciosamente.
 3. Ausência de contexto nos logs (`userId`, `action`, `requestId`).
 
-Sugira a implementação de um logger profissional (como Winston ou Pino) e
+Sugira a implementação de um logger profissional (do tipo Winston ou Pino) e
 garanta a sanitização rigorosa (data masking) para que senhas, tokens e dados
 pessoais nunca sejam gravados no log. O sistema deve separar níveis de log
 (`info`, `warn`, `error`, `fatal`).
