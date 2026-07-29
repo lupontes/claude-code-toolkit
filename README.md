@@ -51,6 +51,17 @@ Nenhum slash command próprio ainda — ver [`commands/`](commands).
 |---|---|
 | [`observability-logging-audit`](prompts/observability-logging-audit.md) | Revisa a arquitetura de observabilidade: logs estruturados (JSON), falhas silenciosas, contexto (userId/action/requestId), logger profissional (Winston/Pino), data masking e níveis de log. |
 
+### Ferramentas relacionadas
+
+Projetos de terceiros que eu uso com o Claude Code, mas que **não** são
+distribuídos por este toolkit (nem como plugin vendorado, nem como referência
+GitHub em `marketplace.json`) — são frameworks completos demais para isso, com
+dependências e estrutura próprias que não sobrevivem a uma cópia solta:
+
+| Ferramenta | Descrição | Repositório |
+|---|---|---|
+| RAPTOR | Framework autônomo de pesquisa ofensiva/defensiva sobre o Claude Code (scan, fuzz, exploit dev, validação de exploitability, auditoria orientada a hipóteses, etc.). Não é um plugin: expõe comandos/skills via `.claude/` (convenção de *projeto*, não de *plugin*) e depende do framework Python inteiro (`core/`, `libexec/`, `engine/`) rodando a partir da própria pasta. Para usar, clone o repositório e rode a partir dele. | [gadievron/raptor](https://github.com/gadievron/raptor) |
+
 ## Uso manual (sem marketplace)
 
 Caso prefira copiar os arquivos manualmente em vez de instalar via plugin:
