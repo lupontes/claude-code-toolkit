@@ -1,8 +1,23 @@
 # claude-code-toolkit
 
-Coleção pessoal de plugins, skills, prompts e comandos customizados para o
-[Claude Code](https://claude.com/product/claude-code), organizados para reuso
-e compartilhamento.
+Coleção pessoal de plugins, skills, prompts, comandos e configuração de MCP
+para o [Claude Code](https://claude.com/product/claude-code), organizados
+para reuso e compartilhamento — o suficiente para reconfigurar uma estação
+de trabalho inteira a partir deste repositório. Veja
+[`WORKFLOW.md`](WORKFLOW.md) para o passo a passo completo e para como as
+peças se encaixam (produtividade / documentação / execução / orquestração /
+memória).
+
+## Por categoria
+
+| Categoria | Peça | Tipo |
+|---|---|---|
+| Produtividade | [superpowers](https://github.com/anthropics/claude-plugins-official) | marketplace oficial (não vendorado) |
+| Documentação | [`mcp-configs/context7`](mcp-configs/context7) | config de MCP |
+| Orquestração | `/loop`, `schedule`, ferramenta `Workflow` | nativo do Claude Code — ver [`WORKFLOW.md`](WORKFLOW.md#orquestração-sem-plugin-de-terceiro) |
+| Memória | [`plugins/claude-mem`](plugins/claude-mem), [`plugins/handoff`](plugins/handoff) | plugins vendorados |
+| Segurança | — | vazio por enquanto |
+| Testes | — | vazio por enquanto |
 
 ## Instalação rápida
 
@@ -50,6 +65,23 @@ Nenhum slash command próprio ainda — ver [`commands/`](commands).
 | Prompt | Descrição |
 |---|---|
 | [`observability-logging-audit`](prompts/observability-logging-audit.md) | Revisa a arquitetura de observabilidade: logs estruturados (JSON), falhas silenciosas, contexto (userId/action/requestId), logger profissional (Winston/Pino), data masking e níveis de log. |
+
+### MCP servers
+
+Configuração pronta pra colar em `mcpServers` — não são plugins, então não
+entram via `/plugin install`, ver instruções em cada pasta.
+
+| Servidor | Descrição |
+|---|---|
+| [`mcp-configs/context7`](mcp-configs/context7) | Documentação e exemplos atualizados de bibliotecas/frameworks (Upstash Context7), remoto, sem instalação local. |
+
+### Scripts
+
+Automação de ambiente via hooks — fora do mecanismo de plugin/marketplace.
+
+| Script | Descrição |
+|---|---|
+| [`scripts/sync-any-project.sh`](scripts/sync-any-project.sh) | Hook de `SessionStart`: sincroniza o repositório git mais próximo do diretório atual, se ele tiver um mecanismo de sync configurado. |
 
 ## Uso manual (sem marketplace)
 
