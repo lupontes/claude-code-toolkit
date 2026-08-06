@@ -37,3 +37,26 @@ Instalação (`~/.claude/settings.json`, escopo global):
 
 Copie o script para `~/scripts/sync-any-project.sh` (ou ajuste o `command`
 acima para o caminho onde você o deixar).
+
+## `verificar-api-anthropic-oficial.sh`
+
+Detecta e (opcionalmente) remove qualquer configuração do Claude Code
+apontando para uma API de terceiro/proxy não-oficial (ex: `ANTHROPIC_BASE_URL`
+customizada, chave que não tem o prefixo `sk-ant-` da Anthropic), garantindo
+que o CLI está falando com `api.anthropic.com` de verdade.
+
+Checa: variáveis de ambiente da sessão, `~/.bashrc`/`~/.zshrc`/`~/.profile`,
+`~/.claude/settings.json`, `~/.claude/config.json`, arquivos `.env`, e
+diretórios de configuração de VSCode/Cursor.
+
+```bash
+# só diagnostica, não altera nada
+bash verificar-api-anthropic-oficial.sh
+
+# diagnostica e corrige o que for seguro automatizar (faz backup .bak-<timestamp> antes)
+bash verificar-api-anthropic-oficial.sh --fix
+```
+
+Configuração de extensão de IDE (Kilo Code, Cursor, etc.) é só reportada —
+esta parte precisa ser removida manualmente, o script não edita config de
+extensão de terceiros automaticamente.
