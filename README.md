@@ -55,6 +55,8 @@ upstream, sempre na versão mais recente.
 | Skill | Descrição |
 |---|---|
 | [`graphify`](skills/graphify) | Transforma qualquer entrada (código, docs, papers, imagens, vídeos) em um grafo de conhecimento persistente, com god nodes, detecção de comunidades e ferramentas de query/path/explain. |
+| [`grilling`](skills/grilling) | Entrevista sistemática por rodadas para estressar um plano/decisão antes de agir: mapeia a "árvore de dependências", pergunta só a "fronteira" (o que já dá pra perguntar), busca fatos sozinha e nunca decide por você. Model-invocável — pode disparar sozinha quando o agente julgar que cabe, ou via `/grilling`. Vendorada de [mattpocock/skills](https://github.com/mattpocock/skills) (MIT). |
+| [`grill-me`](skills/grill-me) | Porta de entrada explícita da `grilling` — roda a mesma sessão, mas só quando invocada via `/grill-me` (nunca sozinha). Útil fora de um diretório de trabalho. Requer `grilling` instalada. Vendorada de [mattpocock/skills](https://github.com/mattpocock/skills) (MIT). |
 
 ### Commands
 
