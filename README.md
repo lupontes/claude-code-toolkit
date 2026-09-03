@@ -18,6 +18,7 @@ memória).
 | Memória | [`plugins/claude-mem`](plugins/claude-mem), [`plugins/handoff`](plugins/handoff) | plugins vendorados |
 | Segurança | — | vazio por enquanto |
 | Testes | — | vazio por enquanto |
+| Ferramentas | [`vercel-labs/skills`](https://github.com/vercel-labs/skills) | CLI externa (não vendorada) |
 
 ## Instalação rápida
 
@@ -76,6 +77,15 @@ entram via `/plugin install`, ver instruções em cada pasta.
 | Servidor | Descrição |
 |---|---|
 | [`mcp-configs/context7`](mcp-configs/context7) | Documentação e exemplos atualizados de bibliotecas/frameworks (Upstash Context7), remoto, sem instalação local. |
+
+### Ferramentas
+
+CLIs auxiliares que não são plugins/skills/MCP e não são vendoradas — usadas
+via `npx` direto do upstream.
+
+| Ferramenta | Descrição |
+|---|---|
+| [`vercel-labs/skills`](https://github.com/vercel-labs/skills) | CLI da Vercel para descobrir, instalar e gerenciar "agent skills" em 76+ agentes de código. `npx skills find` busca skills interativamente; `npx skills add <skill> --global` instala em `~/.claude/skills/`, disponível em todos os projetos. |
 
 ### Scripts
 
