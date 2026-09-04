@@ -85,6 +85,17 @@ Automação de ambiente via hooks — fora do mecanismo de plugin/marketplace.
 |---|---|
 | [`scripts/sync-any-project.sh`](scripts/sync-any-project.sh) | Hook de `SessionStart`: sincroniza o repositório git mais próximo do diretório atual, se ele tiver um mecanismo de sync configurado. |
 
+### Ferramentas relacionadas
+
+Projetos de terceiros que eu uso com o Claude Code, mas que **não** são
+distribuídos por este toolkit (nem como plugin vendorado, nem como referência
+GitHub em `marketplace.json`) — cada um já tem seu próprio mecanismo de
+instalação/marketplace, então duplicá-los aqui não agrega nada.
+
+| Ferramenta | Descrição | Repositório |
+|---|---|---|
+| Claude SEO | Skill de auditoria de SEO para sites já publicados: 25 sub-skills e 18 subagentes rodando em paralelo cobrindo SEO técnico, Schema.org, E-E-A-T, GEO/AEO (busca por IA), SEO local e e-commerce. Roda contra uma URL pública (Playwright + análise por LLM), não contra o código-fonte. Não é vendorado nem referenciado aqui porque já tem marketplace próprio (`/plugin marketplace add AgriciDaniel/claude-seo`); útil pra auditar schema de produto, SEO de marketplace e citabilidade em IA de uma loja publicada. | [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) |
+
 ## Uso manual (sem marketplace)
 
 Caso prefira copiar os arquivos manualmente em vez de instalar via plugin:
